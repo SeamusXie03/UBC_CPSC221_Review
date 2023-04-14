@@ -5,7 +5,7 @@
 - [x] Correctness
 - [x] Selection Sort
 - [x] Insertion Sort
-- [ ] Linked Lists
+- [x] Linked Lists
 - [ ] Stacks
 - [ ] Queues
 - [ ] Merge Sort
