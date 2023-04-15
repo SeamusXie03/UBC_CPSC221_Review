@@ -48,6 +48,29 @@ LIT dequeue() {
 	return returnVal;
 }
 
-// ------ Array implementation ------
-// Time for enqueue and dequeue: O(1)
-// Space: O(1)
+// ------ Using two stacks ------
+public class Queue<E>
+{
+    private Stack<E> inbox = new Stack<E>();
+    private Stack<E> outbox = new Stack<E>();
+
+    // always push to the inbox
+    // Time: O(1)
+    public void queue(E item) {
+        inbox.push(item);
+    }
+
+    // always pop from teh outbox
+    // Time: average O(1) per operation
+    public E dequeue() {
+    	// when the outbox is empty, refill
+	// O(n) for an operation
+        if (outbox.isEmpty()) {
+            while (!inbox.isEmpty()) {
+               outbox.push(inbox.pop());
+            }
+        }
+	// however, on average of n operation, this function will be constant
+        return outbox.pop();
+    }
+}
