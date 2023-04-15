@@ -1,5 +1,6 @@
 
-// The overall running time for this algorithm is n^2
+// Average Time: O(n^2) 
+// Best Time: O(n) 
 void insertionSort (vector<string> & candy) {
 	// running time is n
 	for (int i = 1; i < candy.size(); i++) slide(candy ,i);
