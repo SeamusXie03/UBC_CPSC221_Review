@@ -6,8 +6,8 @@
 - [x] Selection Sort
 - [x] Insertion Sort
 - [x] Linked Lists
-- [ ] Stacks
-- [ ] Queues
+- [x] Stacks
+- [x] Queues
 - [ ] Merge Sort
 - [ ] Trees
 - [ ] Traversals
