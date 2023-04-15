@@ -27,7 +27,7 @@ void printReverseOdds(Node* curr) {
 	} else { 
 		// if there is more than one item in the list, 
 		// go to the next layer and then come back to print
-		printReverseOdds(curr);
+		printReverseOdds(curr -> next -> next);
 		cout << curr->data << end;
 	}
 }
