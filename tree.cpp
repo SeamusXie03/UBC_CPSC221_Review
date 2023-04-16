@@ -114,10 +114,10 @@ void zeroOneChildRemove(Node*& root){
 /*AVL Tree*/
 
 void insert (const T& x, treeNode<t>*& t){
-	if (t == NULL_ t = new treeNode<T>(x,0,NULL,NULL);
+	if (t == NULL) t = new treeNode<T>(x,0,NULL,NULL);
 	    //key, height, keft cihld, right child
 	else if (x < t->key){
-		insert(x, t->key);
+		insert(x, t->left);
 		int balance = height(t->right) - height(t->left);
 		int leftBalance = height(t->left->right) - height(t->left->left);
 		if(balance == -2){
