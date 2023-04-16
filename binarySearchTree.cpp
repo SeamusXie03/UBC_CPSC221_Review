@@ -1,4 +1,5 @@
-// Time: O(h)
+// Avg Time: O(h)
+// Worst Time: O(n)
 void insert(Node*& croot, const K & key) {
 	if (croot == NULL) {
 		croot = new Node(key);
@@ -10,7 +11,8 @@ void insert(Node*& croot, const K & key) {
 	// if key == croot->key, nothing happens, since we want to maintain uniqueness
 }
 
-// Time: O(h)
+// Avg Time: O(h)
+// Worst Time: O(n)
 Node*& find(K & key, Node*& r) {
 	if (r == NULL) return NULL;
 	else if (r->key == key) return r;
@@ -18,7 +20,8 @@ Node*& find(K & key, Node*& r) {
 	else find(r->right, key);
 }
 
-// Time: O(h)
+// Avg Time: O(h)
+// Worst Time: O(n)
 void remove(Node*& croot, const K & k) {
 	if (croot != NULL) {
 		if (croot->key == key) {
@@ -31,7 +34,8 @@ void remove(Node*& croot, const K & k) {
 	}
 }
 
-// Time: O(h)
+// Avg Time: O(h)
+// Worst Time: O(n)
 void doRemoval(Node*& croot) {	
 	if ((croot->left != NULL) && (croot->left != NULL)) {
 		// if there are two child, we need to maintain the in order traversal

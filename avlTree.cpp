@@ -1,4 +1,4 @@
-// Time: O(h)
+// Worst Time: O(h)
 template <class K, class V>
 V AVLTree<K, V>::find(const K& key) const {
     return find(root, key);
@@ -18,7 +18,7 @@ V AVLTree<K, V>::find(Node* subtree, const K& key) const {
     }
 }
 
-// Time: O(h)
+// Worst Time: O(h)
 template <class K, class V>
 void AVLTree<K, V>::insert(const K & key, const V & value) {
     insert(root, key, value);
@@ -45,6 +45,7 @@ void AVLTree<K, V>::updateHeight(Node* node) {
 	node->height = max(height(node->left), height(node->right)) + 1;
 }
 
+// Time: O(1)
 template <class K, class V>
 void AVLTree<K, V>::rotateLeft(Node*& t) {
     *_out << __func__ << endl; // Outputs the rotation name (don't remove this)
@@ -59,6 +60,7 @@ void AVLTree<K, V>::rotateLeft(Node*& t) {
     updateHeight(t);
 }
 
+// Time: O(1)
 template <class K, class V>
 void AVLTree<K, V>::rotateRight(Node*& t) {
     *_out << __func__ << endl; // Outputs the rotation name (don't remove this)
@@ -73,6 +75,7 @@ void AVLTree<K, V>::rotateRight(Node*& t) {
     updateHeight(t);
 }
 
+// Time: O(1)
 template <class K, class V>
 void AVLTree<K, V>::rotateLeftRight(Node*& t) {
     *_out << __func__ << endl; // Outputs the rotation name (don't remove this)
@@ -81,6 +84,7 @@ void AVLTree<K, V>::rotateLeftRight(Node*& t) {
     rotateRight(t);
 }
 
+// Time: O(1)
 template <class K, class V>
 void AVLTree<K, V>::rotateRightLeft(Node*& t) {
     *_out << __func__ << endl; // Outputs the rotation name (don't remove this)
