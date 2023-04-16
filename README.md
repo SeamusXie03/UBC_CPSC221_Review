@@ -8,7 +8,7 @@
 - [x] Linked Lists
 - [x] Stacks
 - [x] Queues
-- [ ] Merge Sort
+- [x] Merge Sort
 - [ ] Trees
 - [ ] Traversals
 - [ ] Binary Search Tree
