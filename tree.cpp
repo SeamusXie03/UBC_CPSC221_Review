@@ -110,3 +110,29 @@ void zeroOneChildRemove(Node*& root){
 	delete temp;
 }
 
+
+/*AVL Tree*/
+
+void insert (const T& x, treeNode<t>*& t){
+	if (t == NULL_ t = new treeNode<T>(x,0,NULL,NULL);
+	    //key, height, keft cihld, right child
+	else if (x < t->key){
+		insert(x, t->key);
+		int balance = height(t->right) - height(t->left);
+		int leftBalance = height(t->left->right) - height(t->left->left);
+		if(balance == -2){
+			if (leftBalnce == -1)	rotate_right(t);
+			else rotate_left_right(t);
+		}
+	else if (x > t->key){
+		insert(x, t->right);
+		int balance = height(t->right) - height(t->left);
+		int rightBalance = height(t->right->right) - height(t->right->left);
+		if(balance == 2){
+			if (leftBalnce == 1)	rotate_left(t);
+			else rotate_right_left(t);
+		}
+	//update the height of the inserted node
+	t->height = max(height(t->left), height(t->right));
+	}
+}
