@@ -1,4 +1,4 @@
-
+// Time: O(n)
 void clear(Node*& croot) {
 	if (croot != NULL) {
 		clear(croot->left);
@@ -8,6 +8,7 @@ void clear(Node*& croot) {
 	}
 }
 
+// Time: O(n)
 Node* copy(Node* croot) {
 	Node* temp = NULL;
 	if (croot != NULL) {
@@ -18,6 +19,7 @@ Node* copy(Node* croot) {
 	return temp;
 }
 
+// Time: O(n)
 void levelOrder(Node* croot) {
 	queue<Node*> Q;
 	Q.push(croot);
