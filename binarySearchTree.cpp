@@ -52,6 +52,15 @@ void zeroOneChildRemove(Node*& croot) {
 void twoChildRemove(Node*& croot) {
 	// find the right most child of the left subtree
 	Node*& iop = rightMostChild(croot->left);
+	// change the key in the croot
 	croot->key = iop->key;
+	// remove this child to avoid duplicate
 	zeroOneChildRemove(iop);
+}
+
+Node*& rightMostChild(Node*& root){
+	// if there is no more right child, return this root
+	if (root->right == NULL) return root;
+	// if we are not yet at the end, continue finding 
+	else return rightMostChild(root->right);
 }
