@@ -9,12 +9,12 @@
 - [x] Stacks
 - [x] Queues
 - [x] Merge Sort
-- [ ] Trees
-- [ ] Traversals
-- [ ] Binary Search Tree
-- [ ] AVL Tree
-- [ ] BTree
-- [ ] Hashing
+- [x] Trees
+- [x] Traversals
+- [x] Binary Search Tree
+- [x] AVL Tree
+- [x] BTree
+- [x] Hashing
 - [ ] Priority Queues
 - [ ] Heaps
 - [ ] Disjoint Sets
