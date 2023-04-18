@@ -1,5 +1,7 @@
-# CPSC221_Review
-
+# UBC_CPSC221_Review
+This repository contains a comprehensive list of course materials for the 2022 Winter CPSC 221 course. 
+It includes a detailed PDF document that highlights all the key concepts covered in the course, as well as sample implementations that can aid in learning and understanding. 
+We hope that these resources will be valuable for future students who are taking the course.
 # List of Content
 - [x] Asymptotics
 - [x] Correctness
