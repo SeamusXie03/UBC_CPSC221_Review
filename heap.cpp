@@ -1,3 +1,4 @@
+
 // ------ Min-Heap implementation ------
 // For some reason, we use index 1 as the root
 // and we use size as the last index of the array
@@ -20,8 +21,10 @@ bool hasAChild(int parent) {
 
 int minChild(int parent) {
 	if (rightChild(parent) <= size) 
-		return items[leftChild(parent)] <= items[rightChild(parent)] ? leftChild(parent) : rightChild(parent);
-	return leftChild(parent);
+		return items[leftChild(parent)] <= items[rightChild(parent)] 
+			? leftChild(parent) : rightChild(parent);
+	else 
+		return leftChild(parent);
 }
 
 void swap(T& left, T& right) {
