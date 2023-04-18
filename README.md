@@ -15,9 +15,9 @@
 - [x] AVL Tree
 - [x] BTree
 - [x] Hashing
-- [ ] Priority Queues
-- [ ] Heaps
-- [ ] Disjoint Sets
+- [x] Priority Queues
+- [x] Heaps
+- [x] Disjoint Sets
 - [ ] Graphs
 - [ ] BFS
 - [ ] DFS
