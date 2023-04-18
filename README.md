@@ -18,8 +18,8 @@
 - [x] Priority Queues
 - [x] Heaps
 - [x] Disjoint Sets
-- [ ] Graphs
-- [ ] BFS
-- [ ] DFS
-- [ ] Minimum Spanning Tree
-- [ ] Shortest Path - Dijkstra's 
+- [x] Graphs
+- [x] BFS
+- [x] DFS
+- [x] Minimum Spanning Tree
+- [x] Shortest Path - Dijkstra's 
